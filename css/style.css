@@ -1,0 +1,2148 @@
+@charset "utf-8";
+
+/* ヘッダー */
+body{
+  min-width: 1140px;
+  max-width: 1900px;
+}
+
+header{
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid #179BE1;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  z-index: 5;
+}
+
+header h1{
+  width: 80px;
+  line-height: 82px;
+  margin-left: 20px;
+}
+
+header h1:hover{
+  opacity: 0.7;
+}
+
+header .gnav{
+  display: flex;
+  line-height: 69px;
+  text-align: right;
+}
+
+header .gnav ul{
+  display: flex;
+}
+
+header .gnav ul li{
+  margin: 0 12px;
+}
+
+header .gnav ul li a{
+  text-decoration: none;
+  color: #229AE1;
+}
+
+header .gnav .icon a{
+  margin: 0 8px;
+}
+
+header .gnav .icon a img{
+  line-height: 69px;
+}
+
+
+header .gnav .login{
+  text-decoration: none;
+  color: #229AE1;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.shop_search{
+  background-color: #229AE1;
+  width: 80px;
+  height: 70px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.shop_search:hover{
+  opacity: 0.7;
+}
+
+/* インフォメーション */
+.information{
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  background-color: #D9E4EA;
+  font-size: 0.9rem;
+}
+
+.information a{
+  text-decoration: none;
+  color: #229AE1;
+}
+
+/* メインコンテナ */
+#mainContainer{
+  display: flex;
+}
+
+/* サイドバー */
+.sidebar{
+  background-color: #D9E4EA;
+  width: 80px;
+  z-index: 4;
+}
+.sidebar .side-btn{
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background-color: #229AE1;
+  border-bottom: 1px solid #D9E4EA;
+  border-right: 1px solid #D9E4EA;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sidebar .men-btn{
+  position: sticky;
+  top: 70px;
+}
+
+.sidebar .women-btn{
+  position: sticky;
+  top: 150px;
+}
+
+.sidebar .kids-btn{
+  position: sticky;
+  top: 230px;
+}
+
+.sidebar .side-btn a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar .item{
+  background-color: #fff;
+  background-image: url(../image/icon_sunglasses.png);
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  line-height: 100px;
+  position: sticky;
+  top: 310px;
+}
+
+.sidebar .item .side-sunglasses{
+  color: #229AE1;
+}
+
+.sidebar .all{
+  background-color: #fff;
+  background-image: url(../image/icon_all.png);
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  line-height: 110px;
+  position: sticky;
+  top: 390px;
+}
+
+.sidebar .all .allItem{
+  color: #229AE1;
+}
+
+/* メインコンテンツ */
+/* イントロダクション */
+.mainContents{
+  width: 100%;
+}
+
+.mainImage img{
+  width: 100%;
+}
+
+#introduction{
+  text-align: center;
+  padding-top: 50px;
+}
+
+#introduction p{
+  padding: 10px 0;
+  line-height: 2;
+}
+
+#introduction img{
+  width: 190px;
+  height: auto;
+  padding: 40px 0;
+}
+
+#introduction .intro-btn a{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  height: 40px;
+  width: 300px;
+  line-height: 40px;
+  border: 1px solid #000000;
+  position: relative;
+  margin: 0 auto 100px;
+}
+
+#introduction .intro-btn a::after{
+  content: '';
+  width: 11px;
+  height: 11px;
+  border: 0;
+  border-top: solid 1px #000000;
+  border-right: solid 1px #000000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+  transform: rotate(45deg);
+  margin-left: 270px;
+}
+
+#introduction .intro-btn a:hover::after{
+  border-top: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+#introduction .intro-btn a::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .7s cubic-bezier(.19, 1, .22, 1);
+  background: #000000;
+  z-index: -1;
+}
+
+#introduction .intro-btn a:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+#introduction .intro-btn a:hover{
+  color: #fff;
+}
+
+#introduction .introBanner a{
+  display: block;
+  background-image: url(../image/nav_banner@2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100px;
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#introduction .introBanner a:hover{
+  opacity: 0.7;
+}
+
+#introduction .introBanner a::after{
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-bottom: solid 1px #000000;
+  border-right: solid 1px #000000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+  transform: rotate(45deg);
+  margin-left: 130px;
+  margin-top: 25px;
+  transition: margin-top .3s;
+}
+
+#introduction .introBanner a:hover::after{
+  margin-top: 30px;
+}
+
+.intro-btns{
+  margin-top: 30px;
+  display: flex;
+  margin: 30px auto;
+  width: 740px;
+}
+
+.intro-btns a{
+  display:block;
+  height: 50px;
+  width: 370px;
+  border: 1px solid #000000;
+  line-height: 50px;
+  text-decoration: none;
+  color: #000000;
+  position: relative;
+}
+
+.intro-btns a:hover{
+  color: #fff;
+}
+
+.intro-btns a::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform .7s cubic-bezier(.19, 1, .22, 1);
+  background: #000000;
+  z-index: -1;
+}
+
+.intro-btns a:hover::before{
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+.intro-btns a::after{
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-bottom: solid 1px #000000;
+  border-right: solid 1px #000000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+  transform: rotate(45deg);
+  margin-left: 340px;
+}
+
+.intro-btns a:hover::after{
+  border-bottom: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+.intro-btns .left-btn{
+  border-right: none;
+}
+
+/* ベストアイテム */
+.line{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 130px;
+}
+
+.lineParts{
+  width: 100%;
+  height: 10px;
+}
+
+.line .purple{
+  background-color: #A689B0;
+}
+.line .orange{
+  background-color: #DE8F5A;
+}
+.line .blue{
+  background-color: #4EAAC9;
+}
+.line .red{
+  background-color: #D88988;
+}
+.line .yellow{
+  background-color: #E9C24F;
+}
+.line .green{
+  background-color: #7FB081;
+}
+
+#bestItems .message{
+  background-image: url(../image/header_title@2x.png);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  text-align: left;
+  margin: 70px 140px;
+}
+
+#bestItems .message p{
+  padding-left: 500px;
+}
+
+#bestItems .message .copy{
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+
+#bestItems .message .text{
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+}
+
+#bestItems nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+#bestItems nav ul li a{
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+#bestItems nav ul li a::after{
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-bottom: solid 1px #fff;
+  border-right: solid 1px #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -80px;
+  transform: rotate(45deg);
+  margin-left: 100px;
+  transition: margin-top .3s;
+  z-index: 1;
+}
+
+#bestItems nav ul li a:hover::after{
+  margin-top: -75px;
+}
+
+#bestItems nav ul li .trend_fdIn:hover{
+  opacity: 0.7;
+}
+
+#bestItems nav ul li .soft_fdIn:hover{
+  opacity: 0.7;
+}
+
+#bestItems nav ul li .natural_fdIn:hover{
+  opacity: 0.7;
+}
+
+#bestItems nav ul li .sharp_fdIn:hover{
+  opacity: 0.7;
+}
+
+#bestItems nav ul li .stylish_fdIn:hover{
+  opacity: 0.7;
+}
+
+#bestItems nav ul li .popular_fdIn:hover{
+  opacity: 0.7;
+}
+
+#bestItems nav ul li a .bestItems-image{
+  height: 250px;
+  width: 100%;
+}
+
+#bestItems nav ul .bestItems-title{
+  position: absolute;
+  height: 16px;
+  width: auto;
+  z-index: 1;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%)
+}
+
+/* メガネチャート */
+.chart{
+  width: 980px;
+  height: 650px;
+  margin: 100px auto;
+  text-align: center;
+  background-image: url(../image/chart_image@2x.png);
+  background-repeat: no-repeat;
+  background-size: 980px 500px;
+  background-position: 50% 100%;
+}
+
+.chart .title{
+  font-size: 28px;
+  font-weight: bold;
+  font-family: monospace;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.chart .summary{
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  margin-bottom: 15px;
+}
+
+/* トレンド */
+.trend-img{
+  width: 980px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.trend-img h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.trend-img h2 p{
+  font-size: 20px;
+  font-weight: lighter;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.trend-img h2 img{
+  width: 150px;
+  height: auto;
+}
+
+.trend-img .slideIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 40px;
+  background-color: #fff;
+}
+
+.trend-img .slideIcon .slide-btn-left{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #E9C24F;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.trend-img .slideIcon .slide-btn-right{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #D9E4EA;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.trendItems{
+  display: flex;
+  width: 800px;
+  margin: 50px auto 0;
+}
+
+.trendItems .images a{
+  display: block;
+  width: 380px;
+  height: 140px;
+}
+
+.trendItems .images p{
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.trendItems .text{
+  margin: auto 50px;
+}
+
+.trendItems .text p{
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  line-height: 2;
+}
+
+.trend .line{
+  width: 980px;
+  height: 10px;
+  background-color: #E9C24F;
+  margin: 50px auto 100px;
+}
+
+/* ソフト＆ナチュラル */
+.soft_natural{
+  width: 880px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* ソフト */
+.soft{
+  margin-right: 20px;
+}
+
+.soft-img{
+  width: 420px;
+  height: 490px;
+  position: relative;
+}
+
+.soft-img h2{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.soft-img h2 p{
+  font-size: 15px;
+  font-weight: lighter;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.soft-img h2 img{
+  width: auto;
+  height: 26px;
+}
+
+.soft .slideIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 40px;
+}
+
+.soft .slideIcon .slide-btn-left{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #D4858B;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.soft .slideIcon .slide-btn-right{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #D9E4EA;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.softItems{
+  width: 420px;
+  margin: 20px auto 0;
+}
+
+.softItems .images a{
+  display: block;
+  width: 420px;
+  height: 140px;
+  background-image: url(../image/ZJ211007_41A1@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: 370px 140px;
+  background-position: center;
+}
+
+.softItems .images p{
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.softItems .text{
+  margin: 20px auto 0;
+}
+
+.softItems .text p{
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  line-height: 2;
+  margin: 0 20px 20px;
+}
+
+.soft .line{
+  width: 420px;
+  height: 10px;
+  background-color: #D4858B;
+  margin: 50px auto 100px;
+}
+
+/* ナチュラル */
+.natural{
+  margin-left: 20px;
+}
+
+.natural-img{
+  width: 420px;
+  height: 490px;
+  position: relative;
+}
+
+.natural-img h2{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.natural-img h2 p{
+  font-size: 15px;
+  font-weight: lighter;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.natural-img h2 img{
+  width: auto;
+  height: 26px;
+}
+
+.natural .slideIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 40px;
+}
+
+.natural .slideIcon .slide-btn-left{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #8E729A;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.natural .slideIcon .slide-btn-right{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #D9E4EA;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.naturalItems{
+  width: 420px;
+  margin: 20px auto 0;
+}
+
+.naturalItems .images a{
+  display: block;
+  width: 420px;
+  height: 140px;
+  background-image: url(../image/ZJ211006_43A1@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: 370px 140px;
+  background-position: center;
+}
+
+.naturalItems .images p{
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.naturalItems .text{
+  margin: 20px auto 0;
+}
+
+.naturalItems .text p{
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  line-height: 2;
+  margin: 0 20px 20px;
+}
+
+.natural .line{
+  width: 420px;
+  height: 10px;
+  background-color: #8E729A;
+  margin: 50px auto 100px;
+}
+
+
+/* シャープ＆スタイリッシュ */
+.sharp_stylish{
+  width: 880px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* シャープ */
+.sharp{
+  margin-right: 20px;
+}
+
+.sharp-img{
+  width: 420px;
+  height: 490px;
+  position: relative;
+}
+
+.sharp-img h2{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sharp-img h2 p{
+  font-size: 15px;
+  font-weight: lighter;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.sharp-img h2 img{
+  width: auto;
+  height: 26px;
+}
+
+.sharp .slideIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 40px;
+}
+
+.sharp .slideIcon .slide-btn-left{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #54B27D;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.sharp .slideIcon .slide-btn-right{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #D9E4EA;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.sharpItems{
+  width: 420px;
+  margin: 20px auto 0;
+}
+
+.sharpItems .images a{
+  display: block;
+  width: 420px;
+  height: 140px;
+  background-image: url(../image/ZJ211005_14F1@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: 370px 140px;
+  background-position: center;
+}
+
+.sharpItems .images p{
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.sharpItems .text{
+  margin: 20px auto 0;
+}
+
+.sharpItems .text p{
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  line-height: 2;
+  margin: 0 20px 20px;
+}
+
+.sharp .line{
+  width: 420px;
+  height: 10px;
+  background-color: #54B27D;
+  margin: 50px auto 100px;
+}
+
+/* スタイリッシュ */
+.stylish{
+  margin-left: 20px;
+}
+
+.stylish-img{
+  width: 420px;
+  height: 490px;
+  position: relative;
+}
+
+.stylish-img h2{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.stylish-img h2 p{
+  font-size: 15px;
+  font-weight: lighter;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.stylish-img h2 img{
+  width: auto;
+  height: 26px;
+}
+
+.stylish .slideIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 40px;
+}
+
+.stylish .slideIcon .slide-btn-left{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #48AFDA;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.stylish .slideIcon .slide-btn-right{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #D9E4EA;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.stylishItems{
+  width: 420px;
+  margin: 20px auto 0;
+}
+
+.stylishItems .images a{
+  display: block;
+  width: 420px;
+  height: 140px;
+  background-image: url(../image/ZJ211004_72A1@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: 370px 140px;
+  background-position: center;
+}
+
+.stylishItems .images p{
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.stylishItems .text{
+  margin: 20px auto 0;
+}
+
+.stylishItems .text p{
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  line-height: 2;
+  margin: 0 20px 20px;
+}
+
+.stylish .line{
+  width: 420px;
+  height: 10px;
+  background-color: #48AFDA;
+  margin: 50px auto 100px;
+}
+
+/* ポピュラー */
+.popular-img{
+  width: 980px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.popular-img h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.popular-img h2 p{
+  font-size: 20px;
+  font-weight: lighter;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.popular-img h2 img{
+  width: 150px;
+  height: auto;
+}
+
+.popular-img .slideIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 40px;
+  background-color: #fff;
+}
+
+.popular-img .slideIcon .slide-btn-left{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #DD7F4B;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.popular-img .slideIcon .slide-btn-right{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #D9E4EA;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.popularItems{
+  display: flex;
+  width: 800px;
+  margin: 50px auto 0;
+}
+
+.popularItems .images a{
+  display: block;
+  width: 380px;
+  height: 140px;
+}
+
+.popularItems .images p{
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.popularItems .text{
+  margin: auto 50px;
+}
+
+.popularItems .text p{
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  line-height: 2;
+}
+
+.popular .line{
+  width: 980px;
+  height: 10px;
+  background-color: #DD7F4B;
+  margin: 50px auto 70px;
+}
+
+/* ベストアイテム商品一覧ボタン */
+#bestItems .bestItems-btn a{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  width: 420px;
+  line-height: 60px;
+  border: 1px solid #000000;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#bestItems .bestItems-btn a::after{
+  content: '';
+  width: 11px;
+  height: 11px;
+  border: 0;
+  border-top: solid 1px #000000;
+  border-right: solid 1px #000000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+  transform: rotate(45deg);
+  margin-left: 380px;
+}
+
+#bestItems .bestItems-btn a:hover::after{
+  border-top: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+#bestItems .bestItems-btn a::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .7s cubic-bezier(.19, 1, .22, 1);
+  background: #000000;
+  z-index: -1;
+}
+
+#bestItems .bestItems-btn a:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+#bestItems .bestItems-btn a:hover{
+  color: #fff;
+}
+
+/* ラインナップ */
+#lineUp{
+  width: 980px;
+  margin: 0 auto;
+  padding-top: 30px;
+  margin-bottom: 200px;
+}
+
+.lineUp-menu .menuTitle{
+  background-image: url(../image/lineup_title@2x.png);
+  background-repeat: no-repeat;
+  background-size: 450px auto;
+  background-position: center;
+  text-align: center;
+}
+
+.lineUp-menu .menuTitle p{
+  display: block;
+  padding-top: 150px;
+  letter-spacing: 0.08em;
+  font-size: 16px;
+}
+
+.lineUp-menu nav ul{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.lineUp-menu nav ul li{
+  width: 100%;
+}
+
+.lineUp-menu nav ul li a{
+  width: 100%;
+  position: relative;
+  display: block;
+  border: 1px solid #000000;
+  border-left: 0;
+  height: 72px;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.lineUp-menu nav ul li .first{
+  border-left: 1px solid #000000;
+}
+
+.lineUp-menu nav ul li a:hover{
+  color: #fff;
+}
+
+.lineUp-menu nav ul li a::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform .7s cubic-bezier(.19, 1, .22, 1);
+  background: #000000;
+  z-index: -1;
+}
+
+.lineUp-menu nav ul li a:hover::before{
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+.lineUp-menu nav ul li a::after{
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-bottom: solid 1px #000000;
+  border-right: solid 1px #000000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+  transform: rotate(45deg);
+  margin-left: 170px;
+}
+
+.lineUp-menu nav ul li a:hover::after{
+  border-bottom: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+/* ラインナップボタン */
+.lineUp-btn a{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  height: 40px;
+  width: 300px;
+  line-height: 40px;
+  border: 1px solid #000000;
+  position: relative;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+.lineUp-btn a::after{
+  content: '';
+  width: 11px;
+  height: 11px;
+  border: 0;
+  border-top: solid 1px #000000;
+  border-right: solid 1px #000000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+  transform: rotate(45deg);
+  margin-left: 270px;
+}
+
+.lineUp-btn a:hover::after{
+  border-top: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+.lineUp-btn a::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .7s cubic-bezier(.19, 1, .22, 1);
+  background: #000000;
+  z-index: -1;
+}
+
+.lineUp-btn a:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.lineUp-btn a:hover{
+  color: #fff;
+}
+
+/* レギュラー */
+.regular{
+  width: 980px;
+  padding-top: 100px;
+}
+
+.regular-img{
+  display: flex;
+  position: relative;
+  height: 430px;
+  background-image: url(../image/cover_regular_image01.jpg);
+  background-repeat: no-repeat;
+  background-size: 840px auto;
+  background-position: center;
+}
+
+.regular .text{
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  height: 150px;
+  width: 350px;
+  background-color: #fff;
+  padding: 60px 0 0 50px;
+}
+
+.regular .text p{
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  line-height: 2.5;
+}
+
+.regularItems ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.regularItems ul li a{
+  display: block;
+  height: 200px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: 300px auto;
+  background-position: center;
+}
+
+.regularItems ul li .first{
+  background-image: url(../image/ZN201011-14E1.jpg);
+}
+
+.regularItems ul li .second{
+  background-image: url(../image/ZJ191010-17F1.jpg);
+}
+
+.regularItems ul li .last{
+  background-image: url(../image/ZJ201004-48E1.jpg);
+}
+
+.regularItems ul li p{
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+/* スキニー */
+.skinny{
+  width: 980px;
+  padding-top: 100px;
+}
+
+.skinny-img{
+  display: flex;
+  position: relative;
+  height: 430px;
+  background-image: url(../image/cover_skinny_image01.jpg);
+  background-repeat: no-repeat;
+  background-size: 840px auto;
+  background-position: center;
+}
+
+.skinny-img img{
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  height: 320px;
+}
+
+.skinny .text{
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  height: 150px;
+  width: 350px;
+  background-color: #fff;
+  padding: 60px 0 0 50px;
+}
+
+.skinny .text p{
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  line-height: 2.5;
+}
+
+.skinnyItems ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.skinnyItems ul li a{
+  display: block;
+  height: 200px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: 300px auto;
+  background-position: center;
+}
+
+.skinnyItems ul li .first{
+  background-image: url(../image/ZJ201004-48E1.jpg);
+}
+
+.skinnyItems ul li .second{
+  background-image: url(../image/ZJ71017-B-1_11.jpg);
+}
+
+.skinnyItems ul li .last{
+  background-image: url(../image/ZJ191009-63A1_11.jpg);
+}
+
+.skinnyItems ul li p{
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+/* クラシック */
+.classic{
+  width: 980px;
+  padding-top: 100px;
+}
+
+.classic-img{
+  display: flex;
+  position: relative;
+  height: 430px;
+  background-image: url(../image/cover_classic_image01.jpg);
+  background-repeat: no-repeat;
+  background-size: 840px auto;
+  background-position: center;
+}
+
+.classic-img img{
+  height: 360px;
+}
+
+.classic .text{
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  height: 150px;
+  width: 360px;
+  background-color: #fff;
+  padding: 90px 0 0 50px;
+}
+
+.classic .text p{
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  line-height: 2.5;
+}
+
+.classicItems ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.classicItems ul li a{
+  display: block;
+  height: 200px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: 300px auto;
+  background-position: center;
+}
+
+.classicItems ul li .first{
+  background-image: url(../image/ZJ191029-18E1_11.jpg);
+}
+
+.classicItems ul li .second{
+  background-image: url(../image/ZJ191029-28A1_11.jpg);
+}
+
+.classicItems ul li .last{
+  background-image: url(../image/ZJ191031-49A1_11.jpg);
+}
+
+.classicItems ul li p{
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+/* ビジネス */
+.business{
+  width: 980px;
+  padding-top: 100px;
+}
+
+.business-img{
+  display: flex;
+  position: relative;
+  height: 430px;
+  background-image: url(../image/cover_business_image01.jpg);
+  background-repeat: no-repeat;
+  background-size: 840px auto;
+  background-position: center;
+}
+
+.business-img img{
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  height: 430px;
+}
+
+.business .text{
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  height: 150px;
+  width: 350px;
+  background-color: #fff;
+  padding: 25px 0 0 50px;
+}
+
+.business .text p{
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  line-height: 2.5;
+}
+
+.businessItems ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.businessItems ul li a{
+  display: block;
+  height: 200px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: 300px auto;
+  background-position: center;
+}
+
+.businessItems ul li .first{
+  background-image: url(../image/ZJ181003-14E1_11.jpg);
+}
+
+.businessItems ul li .second{
+  background-image: url(../image/ZJ191036-14E1_11.jpg)
+}
+
+.businessItems ul li .last{
+  background-image: url(../image/ZF193007-14E1_11.jpg);
+}
+
+.businessItems ul li p{
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+/* キッズ＆ビジネス */
+.sports_kids{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+/* スポーツ  */
+.sports{
+  background-image: url(https://www.zoff.co.jp/pages/zoffsmart/2021/ver1.0.0/common/img/cover_sports_title.svg);
+  background-repeat: no-repeat;
+  background-size: auto 50px;
+  background-position: 0 0;
+}
+
+.sports .sports-img{
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sports .sports-img a{
+  display: block;
+  width: 210px;
+  height: 140px;
+  background-repeat: no-repeat;
+  background-size: 210px auto;
+  background-position: center;
+}
+
+.sports .sports-img .first a{
+  background-image: url(../image/ZJ191036-10E1_11.jpg);
+  margin-right: 10px;
+}
+
+.sports .sports-img .second a{
+  background-image: url(../image/ZJ191036-14E1_11.jpg);
+  margin-left: 10px;
+}
+
+.sports .sports-img p{
+  text-align: center;
+}
+
+/* キッズ */
+.kids{
+  background-image: url(https://www.zoff.co.jp/pages/zoffsmart/2021/ver1.0.0/common/img/cover_kids_title.svg);
+  background-repeat: no-repeat;
+  background-size: auto 50px;
+  background-position: 0 0;
+}
+
+.kids .kids-img{
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.kids .kids-img a{
+  display: block;
+  width: 210px;
+  height: 140px;
+  background-repeat: no-repeat;
+  background-size: 210px auto;
+  background-position: center;
+}
+
+.kids .kids-img .first a{
+  background-image: url(../image/ZJ71K05-C-1_11.jpg);
+  margin-right: 10px;
+}
+
+.kids .kids-img .second a{
+  background-image: url(../image/ZJ71K06-B-1_11.jpg);
+  margin-left: 10px;
+}
+
+.kids .kids-img p{
+  text-align: center;
+}
+
+/* サングラス */
+.sunglasses{
+  background-image: url(https://www.zoff.co.jp/pages/zoffsmart/2021/ver1.0.0/common/img/cover_sunglusses_title.svg);
+  background-repeat: no-repeat;
+  background-size: auto 50px;
+  background-position: top;
+  margin-top: 100px;
+}
+
+.sunglasses .sunglasses-img{
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.sunglasses .sunglasses-img a{
+  display: block;
+  width: 210px;
+  height: 140px;
+  background-repeat: no-repeat;
+  background-size: 210px auto;
+  background-position: center;
+}
+
+.sunglasses .sunglasses-img .first a{
+  background-image: url(../image/ZJ181G01-14E1_11.jpg);
+  margin-right: 10px;
+}
+
+.sunglasses .sunglasses-img .second a{
+  background-image: url(../image/ZJ181G01-71A1_11.jpg);
+  margin-left: 10px;
+}
+
+.sunglasses .sunglasses-img p{
+  text-align: center;
+}
+
+/* スペック */
+#spec-wrapper{
+  background-color: #E6EAEE;
+  width: 100%;
+  padding-top: 130px;
+  padding-bottom: 150px;
+}
+
+/* スペックタイトル */
+#spec-wrapper .title{
+  width: 980px;
+  margin: 0 auto;
+}
+
+#spec-wrapper .title span{
+  display: inline-block;
+  font-size: 48px;
+}
+
+#spec-wrapper .title p{
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
+
+/* スペックウルテム */
+#spec-wrapper .ultem{
+  display: flex;
+  padding-top: 40px;
+}
+
+/* ウルテムイメージ */
+#spec-wrapper .ultem .images{
+  width: 50%;
+  position: relative;
+}
+
+#spec-wrapper .ultem .images .image-weight{
+  background-image: url(../image/ultem_feature01.png);
+  background-repeat: no-repeat;
+  background-size: 100px auto;
+  background-position: 520px 0;
+  width: 100%;
+  height: 86px;
+  margin-bottom: 10px;
+}
+
+#spec-wrapper .ultem .images .image-test{
+  background-image: url(../image/ultem_feature02.png);
+  background-repeat: no-repeat;
+  background-size: 100px auto;
+  background-position: 520px 0;
+  width: 100%;
+  height: 86px;
+}
+
+#spec-wrapper .ultem .images .glass{
+  position: absolute;
+  width: 578px;
+  height: 370px;
+  top: 50px;
+  left: 100px;
+  z-index: 3;
+}
+
+#spec-wrapper .ultem .images .shadow{
+  position: absolute;
+  width: 665px;
+  height: 165px;
+  bottom: 0;
+  left: 10px;
+  z-index: 3;
+}
+
+#spec-wrapper .ultem .images a{
+  display: block;
+  position: absolute;
+  font-size: 10px;
+  text-decoration: none;
+  color: #000000;
+  z-index: 2;
+  bottom: 0;
+  right: 15px;
+}
+
+/* ウルテム説明 */
+#spec-wrapper .ultem .description{
+  background-color: #fff;
+  position: relative;
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+#spec-wrapper .ultem .description .mark{
+  position: absolute;
+  display: block;
+  width: 180px;
+  height: auto;
+  top: -130px;
+  left: 310px;
+}
+
+#spec-wrapper .ultem .description .text{
+  padding: 70px 0 40px 70px;
+}
+
+#spec-wrapper .ultem .description .text .copy{
+  padding-bottom: 30px;
+  border-bottom: 1px solid #000;
+}
+
+#spec-wrapper .ultem .description .text .copy p{
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+#spec-wrapper .ultem .description .text .copy .small{
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  margin-bottom: 5px;
+}
+
+#spec-wrapper .ultem .description .text .copy img{
+  width: auto;
+  height: 35px;
+  margin-left: 25px;
+}
+
+#spec-wrapper .ultem .description .text .contents{
+  background-image: url(../image/ultem_image@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: 134px auto;
+  background-position: 290px 150px;
+  padding-top: 25px;
+}
+
+#spec-wrapper .ultem .description .text .contents p{
+  font-size: 16px;
+  line-height: 2.5;
+  letter-spacing: 0.08em;
+}
+
+#spec-wrapper .ultem .description .text .contents .small{
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+/* ウルテム動画ボタン */
+.ultem-btn a{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  height: 40px;
+  width: 300px;
+  line-height: 40px;
+  border: 1px solid #000000;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+}
+
+.ultem-btn a::after{
+  content: '';
+  background-image: url(https://www.zoff.co.jp/pages/zoffsmart/2021/ver1.0.0/common/img/button_triangle_black.svg);
+  background-size: 11px;
+  width: 11px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  left: 65px;
+  margin-top: -6px;
+}
+
+
+.ultem-btn a::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .7s cubic-bezier(.19, 1, .22, 1);
+  background: #000000;
+  z-index: -1;
+}
+
+.ultem-btn a:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.ultem-btn a:hover{
+  color: #fff;
+}
+
+/* デザイニング */
+#spec-wrapper .designing{
+  width: 810px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+#spec-wrapper .designing .title{
+  width: 810px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #000;
+}
+
+#spec-wrapper .designing .title p{
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+#spec-wrapper .designing .items ul{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+#spec-wrapper .designing .items ul li{
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
+  width : 245px;
+}
+
+#spec-wrapper .designing .items ul li p{
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  line-height: 2;
+}
+
+#spec-wrapper .designing .items ul li .copy{
+  height: 50px;
+}
+
+#spec-wrapper .designing .items ul li .last{
+  line-height: 50px;
+}
+
+#spec-wrapper .designing .items ul li h5{
+  font-size: 24px;
+  font-weight: lighter;
+  letter-spacing: 0.08em;
+  margin-top: 20px;
+  height: 36px;
+}
+
+#spec-wrapper .designing .items ul li .text{
+  height: 196px;
+  margin-top: 30px;
+}
+
+#spec-wrapper .designing .items ul li img{
+  display: block;
+  width: 170px;
+  height: auto;
+  margin: auto;
+}
+
+#spec-wrapper .designing .items ul li .image{
+  width: 220px;
+  height: 170px;
+  position: relative;
+}
+
+#spec-wrapper .designing .items ul li .image::before{
+  content: '';
+  background-image: url(https://www.zoff.co.jp/pages/zoffsmart/2021/ver1.0.0/common/img/designing_frame_top@2x.png);
+  background-size: 30px 30px;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+#spec-wrapper .designing .items ul li .image::after{
+  content: '';
+  background-image: url(https://www.zoff.co.jp/pages/zoffsmart/2021/ver1.0.0/common/img/designing_frame_bottom@2x.png);
+  background-size: 30px 30px;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+/* アフターサービス */
+.afterService{
+  width: 800px;
+  height: 160px;
+  margin: 0 auto;
+}
+
+.afterService .text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.afterService img{
+  width: 190px;
+  height: auto;
+}
+
+.afterService p{
+  display: block;
+  font-size: 13px;
+  color: #4CA1E2;
+}
+
+/* フッター */
+.footerMenu{
+  width: 100%;
+  background-color: #DFE9EE;
+}
+
+.footerMenu nav ul{
+  width: 810px;
+  margin: 0 auto;
+  padding: 50px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerMenu nav ul li{
+  display:flex;
+  flex-flow: column;
+}
+
+.footerMenu nav ul li h3{
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  padding-bottom: 30px;
+  color: #454545;
+}
+
+.footerMenu nav ul li a{
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  color: #454545;
+  padding-bottom: 15px;
+}
+
+.footerMenu nav ul li a img{
+  width: 14px;
+  height: auto;
+  margin-left: 5px;
+}
+
+.footerIcon{
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.footerIcon a{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+.footerIcon a:hover{
+  background-color: #229AE1;
+}
+
+.footerIcon a img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footerCopyright{
+  text-align: center;
+  padding: 50px 0 100px;
+}
+
+.footerCopyright a{
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.footerCopyright a img{
+  width: 60px;
+  height: auto;
+}
+
+.footerCopyright p{
+  display: block;
+  font-size: 12px;
+}
+
+/* ページスクロールボタン */
+#page_scroll{
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: #8BCDF0;
+  position: fixed;
+  z-index: 12;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 100%;
+}
+
+#page_scroll:hover{
+  opacity: 0.7;
+}
+
+#page_scroll::after{
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: 0;
+  border-top: solid 1px #fff;
+  border-left: solid 1px #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+  transform: rotate(
+45deg
+);
+  margin-left: 15px;
+}
+
+/* フェードイン */
+.fadeIn {
+  opacity: 0;
+  transition: 2s;
+}
+.fadeIn.is-show {
+  opacity: 1;
+}
